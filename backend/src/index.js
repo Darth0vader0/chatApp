@@ -5,6 +5,7 @@ import ports from 'cors';
 import { connectDB } from './lib/db.js';
 import authRoutes from './routes/auth.route.js';   
 import messagesRoute from './routes/message.route.js';
+import { mongo } from 'mongoose';
 dotEnv.config();
 const app = experess();
 const PORT = process.env.PORT;
