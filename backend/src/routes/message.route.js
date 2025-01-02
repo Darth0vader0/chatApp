@@ -1,6 +1,6 @@
 import express from 'express'
 import { protectRoute } from '../middleware/auth.middleware.js';
-import { getUserForSidebar, sendMessages } from '../controllers/messages.controller.js';
+import { getUserForSidebar, sendMessages,getMessages } from '../controllers/messages.controller.js';
 const router =express.Router();
 
 router.get('/users',protectRoute,getUserForSidebar);

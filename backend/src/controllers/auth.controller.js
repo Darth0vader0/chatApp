@@ -110,6 +110,7 @@ export const checkUser = (req,res)=>
 {
     try {
         res.status(200).json({msg : "user is authenticated"})
+        console.log
     } catch (error) {
         console.log("there is an error",error.message);
         res.status(500).json({msg:"internal server error"});
